@@ -1,6 +1,5 @@
 For external access and deploying apps in /manager of Tomcat 8 (Docker container):
-Login: tomcat
-password: tomcat
+
 Config changed: /usr/local/tomcat/conf/tomcat-users.xml
 ```
 <role rolename="manager-gui"/>
@@ -24,3 +23,5 @@ Example of deployin WAR to Tomcat:
 ```
 curl -T "target/webapp1.war" "http://tomcat:tomcat@192.168.0.104:8080/manager/text/deploy?path=/webapp1&update=true"
 ```
+Login: tomcat
+password: tomcat

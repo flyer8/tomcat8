@@ -22,5 +22,5 @@ docker run -d --name tomcat --rm -p 8080:8080 flyer8/tomcat8
 ```
 Example of deployin WAR to Tomcat:
 ```
-curl -T "target/webapp1.war" "http://tomcat:tomcat@192.168.0.104:8888/manager/text/deploy?path=/webapp1&update=true"
+curl -T "target/webapp1.war" "http://tomcat:tomcat@192.168.0.104:8080/manager/text/deploy?path=/webapp1&update=true"
 ```

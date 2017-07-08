@@ -15,11 +15,15 @@ Commented the context: /usr/local/tomcat/webapps/manager/META-INF/context.xml
          allow="127\.\d+\.\d+\.\d+|::1|0:0:0:0:0:0:0:1" />
 -->
 ```
+For building image execute:
+```
+docker build -t flyer8/tomcat8 .
+```
 Running Docker container:
 ```
 docker run -d --name tomcat --rm -p 8080:8080 flyer8/tomcat8
 ```
-Example of deploying WAR to Tomcat:
+Example of deploying WAR file to Tomcat:
 ```
 curl -T "target/webapp1.war" "http://tomcat:tomcat@192.168.0.104:8080/manager/text/deploy?path=/webapp1&update=true"
 ```

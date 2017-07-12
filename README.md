@@ -1,3 +1,7 @@
+https://hub.docker.com/r/flyer8/tomcat8/
+```
+docker pull flyer8/tomcat8
+```
 For external access and deploying apps in /manager of Tomcat 8 (Docker container):
 
 Config changed: /usr/local/tomcat/conf/tomcat-users.xml
